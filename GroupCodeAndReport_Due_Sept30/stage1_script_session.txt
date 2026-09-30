@@ -1,0 +1,227 @@
+===== javac *.java =====
+COMPILE_EXIT:0
+
+===== java Stage1RegressionTest =====
+PASS: first client ID is C1
+PASS: second client ID is C2
+PASS: third client ID is C3
+PASS: fourth client ID is C4
+PASS: fifth client ID is C5
+PASS: C1 is stored
+PASS: C1 balance is 0.00
+PASS: C2 is stored
+PASS: C2 balance is 0.00
+PASS: C3 is stored
+PASS: C3 balance is 0.00
+PASS: C4 is stored
+PASS: C4 balance is 0.00
+PASS: C5 is stored
+PASS: C5 balance is 0.00
+PASS: first product ID is P1
+PASS: second product ID is P2
+PASS: third product ID is P3
+PASS: fourth product ID is P4
+PASS: fifth product ID is P5
+PASS: P1 stock 10 price $1
+PASS: P2 stock 20 price $2
+PASS: P3 stock 30 price $3
+PASS: P4 stock 40 price $4
+PASS: P5 stock 50 price $5
+PASS: add P1 qty 5 to C1
+PASS: add P3 qty 5 to C1
+PASS: add P5 qty 5 to C1
+PASS: C1 wishlist exists
+PASS: C1 wishlist size is 3 (actual 3)
+PASS: C1 has P1 -> 5 (actual 5)
+PASS: C1 has P3 -> 5 (actual 5)
+PASS: C1 has P5 -> 5 (actual 5)
+PASS: add P1 qty 7 to C2
+PASS: add P2 qty 7 to C2
+PASS: add P4 qty 7 to C2
+PASS: C2 after first add wishlist exists
+PASS: C2 after first add wishlist size is 3 (actual 3)
+PASS: C2 after first add has P1 -> 7 (actual 7)
+PASS: C2 after first add has P2 -> 7 (actual 7)
+PASS: C2 after first add has P4 -> 7 (actual 7)
+PASS: add P1 qty 6 to C3
+PASS: add P2 qty 6 to C3
+PASS: add P5 qty 6 to C3
+PASS: C3 wishlist exists
+PASS: C3 wishlist size is 3 (actual 3)
+PASS: C3 has P1 -> 6 (actual 6)
+PASS: C3 has P2 -> 6 (actual 6)
+PASS: C3 has P5 -> 6 (actual 6)
+PASS: add P3 qty 7 to C2
+PASS: add P5 qty 7 to C2
+PASS: C2 after second add wishlist exists
+PASS: C2 after second add wishlist size is 5 (actual 5)
+PASS: C2 after second add has P1 -> 7 (actual 7)
+PASS: C2 after second add has P2 -> 7 (actual 7)
+PASS: C2 after second add has P4 -> 7 (actual 7)
+PASS: C2 after second add has P3 -> 7 (actual 7)
+PASS: C2 after second add has P5 -> 7 (actual 7)
+PASS: C3 unchanged after C2 update wishlist exists
+PASS: C3 unchanged after C2 update wishlist size is 3 (actual 3)
+PASS: C3 unchanged after C2 update has P1 -> 6 (actual 6)
+PASS: C3 unchanged after C2 update has P2 -> 6 (actual 6)
+PASS: C3 unchanged after C2 update has P5 -> 6 (actual 6)
+PASS: invalid client C999 is not found
+PASS: wishlist for C999 fails
+PASS: wishlist query for C999 fails
+PASS: add P999 to C1 fails
+PASS: add P1 qty 5 to C4
+PASS: replace C4 P1 quantity with 8
+PASS: C4 wishlist has one P1 entry
+PASS: C4 P1 quantity is 8, not 13
+
+ALL STAGE 1 REGRESSION TESTS PASSED
+
+===== java UserInterface (professor C1-C5 / P1-P5 / wishlist sequence) =====
+Enter a number between 0 and 7 as explained below:
+0 to Exit
+
+1 to add a client
+2 to add products
+3 to add products to a client wishlist
+4 to display all clients
+5 to display all products
+6 to display a client wishlist
+7 for help
+Enter command:7 for help
+Enter client name
+Enter address
+Client ID: C1 | Name: Client One | Address: 1 First St | Balance: $0.00
+Enter command:7 for help
+Enter client name
+Enter address
+Client ID: C2 | Name: Client Two | Address: 2 Second St | Balance: $0.00
+Enter command:7 for help
+Enter client name
+Enter address
+Client ID: C3 | Name: Client Three | Address: 3 Third St | Balance: $0.00
+Enter command:7 for help
+Enter client name
+Enter address
+Client ID: C4 | Name: Client Four | Address: 4 Fourth St | Balance: $0.00
+Enter command:7 for help
+Enter client name
+Enter address
+Client ID: C5 | Name: Client Five | Address: 5 Fifth St | Balance: $0.00
+Enter command:7 for help
+Client ID: C1 | Name: Client One | Address: 1 First St | Balance: $0.00
+Client ID: C2 | Name: Client Two | Address: 2 Second St | Balance: $0.00
+Client ID: C3 | Name: Client Three | Address: 3 Third St | Balance: $0.00
+Client ID: C4 | Name: Client Four | Address: 4 Fourth St | Balance: $0.00
+Client ID: C5 | Name: Client Five | Address: 5 Fifth St | Balance: $0.00
+Enter command:7 for help
+Enter product name
+Enter amount in stock
+Enter sale price
+Product ID: P1 | Name: Product 1 | Stock: 10 | Price: $1.00
+Add more products? (Y|y)[es] or anything else for no
+Enter product name
+Enter amount in stock
+Enter sale price
+Product ID: P2 | Name: Product 2 | Stock: 20 | Price: $2.00
+Add more products? (Y|y)[es] or anything else for no
+Enter product name
+Enter amount in stock
+Enter sale price
+Product ID: P3 | Name: Product 3 | Stock: 30 | Price: $3.00
+Add more products? (Y|y)[es] or anything else for no
+Enter product name
+Enter amount in stock
+Enter sale price
+Product ID: P4 | Name: Product 4 | Stock: 40 | Price: $4.00
+Add more products? (Y|y)[es] or anything else for no
+Enter product name
+Enter amount in stock
+Enter sale price
+Product ID: P5 | Name: Product 5 | Stock: 50 | Price: $5.00
+Add more products? (Y|y)[es] or anything else for no
+Enter command:7 for help
+Product ID: P1 | Name: Product 1 | Stock: 10 | Price: $1.00
+Product ID: P2 | Name: Product 2 | Stock: 20 | Price: $2.00
+Product ID: P3 | Name: Product 3 | Stock: 30 | Price: $3.00
+Product ID: P4 | Name: Product 4 | Stock: 40 | Price: $4.00
+Product ID: P5 | Name: Product 5 | Stock: 50 | Price: $5.00
+Enter command:7 for help
+Enter client ID
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter command:7 for help
+Enter client ID
+Product ID: P1 | Product: Product 1 | Quantity: 5
+Product ID: P3 | Product: Product 3 | Quantity: 5
+Product ID: P5 | Product: Product 5 | Quantity: 5
+Enter command:7 for help
+Enter client ID
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter command:7 for help
+Enter client ID
+Product ID: P1 | Product: Product 1 | Quantity: 7
+Product ID: P2 | Product: Product 2 | Quantity: 7
+Product ID: P4 | Product: Product 4 | Quantity: 7
+Enter command:7 for help
+Enter client ID
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter command:7 for help
+Enter client ID
+Product ID: P1 | Product: Product 1 | Quantity: 6
+Product ID: P2 | Product: Product 2 | Quantity: 6
+Product ID: P5 | Product: Product 5 | Quantity: 6
+Enter command:7 for help
+Enter client ID
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter product ID
+Enter quantity
+Product added to wishlist
+Add another product to this wishlist? (Y|y)[es] or anything else for no
+Enter command:7 for help
+Enter client ID
+Product ID: P1 | Product: Product 1 | Quantity: 7
+Product ID: P2 | Product: Product 2 | Quantity: 7
+Product ID: P4 | Product: Product 4 | Quantity: 7
+Product ID: P3 | Product: Product 3 | Quantity: 7
+Product ID: P5 | Product: Product 5 | Quantity: 7
+Enter command:7 for help
+Enter client ID
+Product ID: P1 | Product: Product 1 | Quantity: 6
+Product ID: P2 | Product: Product 2 | Quantity: 6
+Product ID: P5 | Product: Product 5 | Quantity: 6
+Enter command:7 for help
