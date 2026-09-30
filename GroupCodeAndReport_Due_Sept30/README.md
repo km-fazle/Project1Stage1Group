@@ -15,8 +15,7 @@ java UserInterface
 java Stage1RegressionTest
 ```
 
-The group leader should fork
 
 https://github.com/rsarnath/Project1Stage1Group/tree/main
 
-invite the members, instructor (`rsarnath`), and TA (`SajalCodeHub`), then place `WarehouseStage1` in that private repo.
+
