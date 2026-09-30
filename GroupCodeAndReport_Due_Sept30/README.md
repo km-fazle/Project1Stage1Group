@@ -5,7 +5,6 @@ This folder is the group GitHub / D2L submission.
 ## Files
 
 - `WarehouseStage1/` — the Stage 1 program
-- `Group_Report_Template.txt` — D2L group report (leave blanks empty until they are real)
 - `stage1_script_session.txt` — compile + regression + professor interactive test transcript
 
 ## Run from WarehouseStage1
